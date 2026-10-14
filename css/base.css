@@ -1,0 +1,69 @@
+/* Layout: one DJ booth. The deck (turntable + pads) sits on top, the record sleeve (project detail)
+   slides in beside it on wide screens and below it on phones, and the liner notes (resume) follow. */
+:root {
+  color-scheme: dark;
+  /* Color: walnut plinth, brushed aluminium, amber LED, signal red. Single committed dark look. */
+  --room:      #14110f;   /* page background, a dim booth */
+  --walnut:    #3a2618;   /* deck plinth wood */
+  --walnut-hi: #5a3b24;
+  --alu:       #b9bcc0;   /* brushed metal */
+  --alu-lo:    #6f7378;
+  --vinyl:     #0d0d0e;
+  --ink:       #efe8de;   /* main text, warm white */
+  --ink-dim:   #a99d8f;   /* secondary text */
+  --amber:     #ffb547;   /* LEDs, focus, accent */
+  --amber-glow: rgba(255,181,71,.45);
+  --signal:    #ff5a4e;   /* record / live indicator */
+  --lcd-bg:    #1d2a1f;
+  --lcd-ink:   #b6f2a4;
+  --line:      rgba(239,232,222,.12);
+
+  /* Type */
+  --font-display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Instrument Sans", "Helvetica Neue", Arial, sans-serif;
+  --font-lcd: "Share Tech Mono", "Courier New", ui-monospace, monospace;
+
+  --step--1: .8125rem;
+  --step-0: 1rem;
+  --step-1: 1.25rem;
+  --step-2: 1.75rem;
+  --step-3: 2.5rem;
+  --step-4: clamp(2.5rem, 6vw, 3.75rem);
+
+  --radius: 10px;
+  --gap: clamp(16px, 3vw, 32px);
+}
+
+* { box-sizing: border-box; }
+html { background: var(--room); }
+body {
+  margin: 0;
+  background: var(--room);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.55;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 24px 48px;
+  overflow-x: hidden;
+}
+.wrap { max-width: 1240px; margin-inline: auto; display: grid; gap: var(--gap); }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 800; letter-spacing: .02em; text-wrap: balance; margin: 0; line-height: 1.05; }
+a { color: var(--amber); }
+:focus-visible { outline: 2px solid var(--amber); outline-offset: 3px; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+.site-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; }
+.site-head h1 { font-size: var(--step-4); text-transform: uppercase; }
+.site-head h1 span { color: var(--amber); }
+.site-head p { margin: 0; color: var(--ink-dim); max-width: 46ch; }
+
+.booth { display: grid; gap: var(--gap); grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); align-items: start; }
+@media (max-width: 960px) { .booth { grid-template-columns: minmax(0, 1fr); } }
+
+.site-foot { color: var(--ink-dim); font-size: var(--step--1); display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 16px; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; transition-duration: .001ms !important; }
+}

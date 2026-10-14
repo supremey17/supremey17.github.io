@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Saul's Record Deck</title>
+<meta name="description" content="Saul's portfolio and resume, played on an interactive turntable.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;800;900&family=Instrument+Sans:wght@400;500;600&family=Share+Tech+Mono&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/deck.css">
+<link rel="stylesheet" href="css/panel.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="site-head">
+    <h1 id="site-title">Saul's <span>Record Deck</span></h1>
+    <p id="site-intro">Every project is a record. Press a pad on the deck to drop the needle and read about it, then open it on GitHub.</p>
+  </header>
+
+  <main class="booth">
+    <!-- Owned by js/deck.js + css/deck.css -->
+    <section id="deck" aria-label="Turntable: choose a project"></section>
+    <!-- Owned by js/panel.js + css/panel.css -->
+    <section id="panel" aria-labelledby="panel-title"></section>
+  </main>
+
+  <!-- Owned by js/panel.js + css/panel.css -->
+  <section id="resume" aria-labelledby="resume-title"></section>
+
+  <footer class="site-foot">
+    <span>Built with plain HTML, CSS and JavaScript.</span>
+    <a id="foot-github" href="https://github.com/supremey17" target="_blank" rel="noopener">github.com/supremey17</a>
+  </footer>
+</div>
+<script src="js/data.js"></script>
+<script src="js/deck.js"></script>
+<script src="js/panel.js"></script>
+</body>
+</html>
