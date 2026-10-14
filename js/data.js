@@ -1,59 +1,3 @@
-
-Hi saul,
-Excited to get started on Get a job. Here are a few ways to begin.
-
-can you tailor my resume to fit the requirements. Look at professional resumes and decide on the best template, if you need to add more to the resume ask me questions and i can provide more projects i have worked on. You can reference past chats to look for impressive projects that you can include.
-
-On it, starting your resume now.
-
-
-
-Sure, filling in your portfolio now.
-
-
-
-
-
-
-Starting by finding your DJ turntable portfolio repo on GitHub and reading your updated resume.
-
-Added supremey17/java to this thread
-Read resume and earlier thread
-
-Reviewed the turntable site (supremey17.github.io)
-
-Rewrote window.PORTFOLIO from the resume and repos
-
-Rendered the site with the new file, no placeholders left
-
-I rewrote the file in the same format, and I loaded it into your site to test it: 
-data.js. Everything rendered with no placeholders left. To use it, replace js/data.js in your supremey17.github.io repo with it.
-
-What I filled in from your resume: your title, Rochester NY, a bio, your iCloud email, LinkedIn, SUNY Brockport (Dean’s List, expected May 2027), Wegmans, and skills that match the resume.
-
-Weather App 2.0: I changed “63 tests” to “130+”. The repo has 132 tests, so 63 was out of date.
-
-Sky Traffic: it now says what your commits show you did: data cleaning, the seasonal chart, the correlation matrix and the log-scale boxplots. It also says your teammates did the modeling.
-
-Two problems I found in your repos:
-
-Weather-app has none of your app’s code. Anyone who opens that repo will see someone else’s npm package called yocto-queue, plus a few Expo config files. Its MIT license also belongs to that package. I rewrote that track to describe the React Native/Expo app from your original resume, so it stopped claiming “plain JavaScript, MIT”. Push your real source to that repo, or tell me and I’ll remove the track.
-Your Java repo only has a README, so I removed the Java Projects track. It would have shown up as a locked, empty record.
-I left out Wire Tech because you asked me to swap it out of the resume. Tell me if you want it on the site. If you’d like, I can also open a PR to your site repo that adds this file and your resume PDF as a download button.
-
-
-
-
-data.js
-JS
-
-data.js
-8m ago
-/*
- * Portfolio content. This is the only file you need to edit to change what the site shows.
- * Anything wrapped in [brackets] is a placeholder: replace it with your real details.
- * Each project is a "track" on the deck. Order here = order of the pads (A1, A2, ...).
- */
 window.PORTFOLIO = {
   owner: {
     name: "Saul Villa",
@@ -153,48 +97,6 @@ window.PORTFOLIO = {
   ]
 };
  
-
-1
-1 artifact
-Today
-
-
-10m ago
-Starting by finding your DJ turntable portfolio repo on GitHub and reading your updated resume.
-
-10m ago
-New
-Added supremey17/java to this thread
-9m ago
-Read resume and earlier thread
-
-Reviewed the turntable site (supremey17.github.io)
-
-Rewrote window.PORTFOLIO from the resume and repos
-
-Rendered the site with the new file, no placeholders left
-
-I rewrote the file in the same format, and I loaded it into your site to test it: 
-data.js. Everything rendered with no placeholders left. To use it, replace js/data.js in your supremey17.github.io repo with it.
-
-What I filled in from your resume: your title, Rochester NY, a bio, your iCloud email, LinkedIn, SUNY Brockport (Dean’s List, expected May 2027), Wegmans, and skills that match the resume.
-
-Weather App 2.0: I changed “63 tests” to “130+”. The repo has 132 tests, so 63 was out of date.
-
-Sky Traffic: it now says what your commits show you did: data cleaning, the seasonal chart, the correlation matrix and the log-scale boxplots. It also says your teammates did the modeling.
-
-Two problems I found in your repos:
-
-Weather-app has none of your app’s code. Anyone who opens that repo will see someone else’s npm package called yocto-queue, plus a few Expo config files. Its MIT license also belongs to that package. I rewrote that track to describe the React Native/Expo app from your original resume, so it stopped claiming “plain JavaScript, MIT”. Push your real source to that repo, or tell me and I’ll remove the track.
-Your Java repo only has a README, so I removed the Java Projects track. It would have shown up as a locked, empty record.
-I left out Wire Tech because you asked me to swap it out of the resume. Tell me if you want it on the site. If you’d like, I can also open a PR to your site repo that adds this file and your resume PDF as a download button.
-
-
-js
-data.js
-
-8m ago
-
 
 
 Fast mode off
