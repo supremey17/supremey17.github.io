@@ -1,3 +1,8 @@
+/*
+ * Portfolio content. This is the only file you need to edit to change what the site shows.
+ * Anything wrapped in [brackets] is a placeholder: replace it with your real details.
+ * Each project is a "track" on the deck. Order here = order of the pads (A1, A2, ...).
+ */
 window.PORTFOLIO = {
   owner: {
     name: "Saul Villa",
@@ -22,7 +27,7 @@ window.PORTFOLIO = {
       { role: "Customer Service Representative", org: "Wegmans · Rochester, NY", years: "Dec 2024 – Present", summary: "Resolve customer issues in a high-volume store, coordinate with staff across departments during peak hours, and handle transactions while protecting customer information." }
     ]
   },
- 
+
   tracks: [
     {
       id: "weather-2",
@@ -96,7 +101,3 @@ window.PORTFOLIO = {
     }
   ]
 };
- 
-
-
-Fast mode off
